@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="shortcut icon" href="OIP.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+    
+    <section class="container my-5">
+      
+      <header class="d-flex justify-content-between mx-4">
+          <h1 ><i class="fa-solid fa-clipboard-list"></i> To-Do </h1>
+          <div class="fs-4">
+            <i class="fa-solid fa-moon" id="dark"></i>
+            <i class="fa-solid fa-sun d-none" id="light"></i>
+          </div>
+      </header>
+
+      <hr class="w-75 m-auto my-4">
+
+      <main class=" my-5 w-60">
+
+        <div class="d-flex mt-4 mb-5">
+          <input type="text" name="to-do" id="toDoInput" placeholder="add task .. " class="form-control me-3 py-2">
+          <button class="btn btn-primary px-3" id="addBtn"> Add </button>
+        </div>
+
+        <div id="toDoList">
+          
+        </div>
+
+      </main>
+        
+    </section> 
+
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <Script src="js/bootstrap.bundle.min.js"></Script>
+    <Script src="js/main.js"></Script>
+</body>
+</html>

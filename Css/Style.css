@@ -1,0 +1,91 @@
+ :root{
+    --primary-background-color : rgb(255,255,255);
+    --primary-text-color : rgb(0, 0, 0);
+
+    --secondary-background-color : rgb(109, 73, 226);
+    --secondary-text-color : rgb(255,255,255);
+   
+}
+
+
+body{
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: cursive;
+}
+
+.dark-mode{
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+}
+
+
+
+
+.w-60{
+    width: 55%;
+    margin: auto;
+}
+
+@media screen and (max-width:760px) {
+    .w-60{
+        width: 96%;
+    }
+}
+
+i {
+    cursor: pointer;
+}
+
+
+
+.line-through{
+    text-decoration: line-through;
+}
+
+
+.loading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  }
+  @keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+  }
