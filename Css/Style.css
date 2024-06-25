@@ -4,6 +4,7 @@
 
     --secondary-background-color : rgb(109, 73, 226);
     --secondary-text-color : rgb(255,255,255);
+    font-size: 16px;
    
 }
 
@@ -28,6 +29,9 @@ body{
 }
 
 @media screen and (max-width:760px) {
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
     .w-60{
         width: 96%;
     }
